@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0 0 0 0;
+}
+
+body {
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #2d012d;
+}
+
+navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #2d012d;
+  display: block;
+}
+
+.title {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: #ffb8ff;
+}
+
+.main {
+  width: 60%;
+  height: 500px;
+  background-color: #855289;
+  border-radius: 60px;
+  margin: auto;
+  /* opacity: 80%; */
+}
+
+.formTitles {
+  font-size: 20px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.textboxes {
+  width: 100px;
+  margin-left: 12px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.formCont {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.button {
+  border: solid 1px rgb(153, 42, 193);
+  border-color: #82087e;
+  color: #9600bd;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+}
+.dataTitle {
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.inserts {
+  color: white;
+  padding-left: 50px;
+  padding-bottom: 5px;
+  transition: linear 1s;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.titleDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  padding-top: 20px;
+}

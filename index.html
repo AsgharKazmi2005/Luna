@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div>
+      <!-- Navigation Bar (For Design Purposes) -->
+      <navbar>
+        <h1 class="title">Luna</h1>
+      </navbar>
+      <!-- Form Submission (Frontend DOM Manipulation) -->
+      <div class="main">
+
+        <form>
+          <div class="pageTitle">Lunar Data Calculator</div>
+          <div class="formCont">
+            <div>
+              <h1 class="formTitles">Date:</h1>
+              <input class="textboxes date space" type="date" />
+            </div>
+            <div>
+              <h1 class="formTitles" placeholder="New York City">City/State/Country:</h1>
+              <input class="textboxes city" />
+            </div>
+            <div>
+              <div class="button">Search</div>
+            </div>
+          </div>
+           <!--   Insert Adjacent HTML Using Object iteration  -->
+          <div class="dataCont"></div>
+           </div>
+        </form>
+      </div>
+      <!-- Import Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
