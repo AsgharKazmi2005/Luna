@@ -3,6 +3,8 @@ const searchButton = document.querySelector(".button");
 const city = document.querySelector(".city");
 const dataCont = document.querySelector(".dataCont");
 const date = document.querySelector(".date");
+const explanation = document.querySelectorAll(".explanation");
+console.log(explanation);
 
 //Define Functions
 function armyToNormal(input) {
@@ -24,6 +26,7 @@ async function getApi(url) {
 
   console.log(data);
   dataCont.innerHTML = "";
+
   dataCont.insertAdjacentHTML(
     `afterbegin`,
     `
@@ -48,10 +51,14 @@ async function getApi(url) {
 }
 
 //When button is clicked, load in API Data
-searchButton.addEventListener("click", function () {
+searchButton.addEventListener("click", function (event) {
+  event.preventDefault();
   const cityFormatted = city.value.split(" ").join("%20");
-  console.log(cityFormatted);
   getApi(
     `https://api.ipgeolocation.io/astronomy?apiKey=8b804068b8f64da18a18e4751642af33&location=${cityFormatted},&date=${date.value}`
   );
+
+  explanation.forEach(function (node, value) {
+    node.parentNode.removeChild(node);
+  });
 });

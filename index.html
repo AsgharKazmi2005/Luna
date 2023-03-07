@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -15,25 +17,32 @@
       </navbar>
       <!-- Form Submission (Frontend DOM Manipulation) -->
       <div class="main">
-
         <form>
           <div class="pageTitle">Lunar Data Calculator</div>
           <div class="formCont">
             <div>
               <h1 class="formTitles">Date:</h1>
-              <input class="textboxes date space" type="date" />
+              <input class="textboxes date space" type="date" min="1970-01-01"/>
             </div>
             <div>
               <h1 class="formTitles" placeholder="New York City">City/State/Country:</h1>
-              <input class="textboxes city" />
+              <input class="textboxes city"/>
             </div>
             <div>
-              <div class="button">Search</div>
+              <button class="button">Search</button>
             </div>
+          </div>
+          <div class="explanation">
+            <h2 class="expHead">How It Works</h2>
+            <p class="p"> It doesn't matter if you are an artist trying to make an accurate painting, an aerospace engineer looking for accurate data, or a mathematician in an intensive math modeling competition, the Luna data calculator can cover your statistical needs. The Lunar Data Calculator works by using a combination of multiple APIs to collect Lunar data for a certain time and locations. Please enter a date and region to extract data. If an entered location does not exist in the respective API endpoints, the city with the closest name will be shown. If an entered location exists but has no data, the nearest city will be shown. Site not supported on all devices and browsers, Google Chrome is recommended. Calculations take 2-10 Seconds.</p>
+          </div>
+          <div class="explanation">
+            <h2 class="expHead">Data Parameters</h2>
+            <p class="p"> The Data Provided includes the Moon Rise, Moon Set, Moon Altitude (Height from given region), Moon Distance (Distance from given region), Moon Azimuth (Cardinal direction of The Moon) and the Moon Parallactic Angle (angle between the horizon and the celestial meridian of a given observation point). Soon the calculator will support Moon Phase description and imagery among other data. </p>
           </div>
            <!--   Insert Adjacent HTML Using Object iteration  -->
           <div class="dataCont"></div>
-           </div>
+          </div>
         </form>
       </div>
       <!-- Import Moment.js -->
