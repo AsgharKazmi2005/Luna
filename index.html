@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!-- HTML Declaration -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>replit</title>
+    <title>Luna</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
 rel='stylesheet' type='text/css'>
@@ -19,6 +20,7 @@ rel='stylesheet' type='text/css'>
       <div class="main">
         <form>
           <div class="pageTitle">Lunar Data Calculator</div>
+          <span class="pageDesc"><i>Enter any date and region and then press enter to recieve Lunar Data</i></span>
           <div class="formCont">
             <div>
               <h1 class="formTitles">Date:</h1>
@@ -40,12 +42,12 @@ rel='stylesheet' type='text/css'>
             <h2 class="expHead">Data Parameters</h2>
             <p class="p"> The Data Provided includes the Moon Rise, Moon Set, Moon Altitude (Height from given region), Moon Distance (Distance from given region), Moon Azimuth (Cardinal direction of The Moon) and the Moon Parallactic Angle (angle between the horizon and the celestial meridian of a given observation point). Soon the calculator will support Moon Phase description and imagery among other data. </p>
           </div>
-           <!--   Insert Adjacent HTML Using Object iteration  -->
+           <!--   Insert Adjacent HTML Using User Input  -->
           <div class="dataCont"></div>
           </div>
         </form>
       </div>
-      <!-- Import Moment.js -->
+      <!-- Import Moment.js (Time Converter)-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.js"></script>
     <script src="script.js"></script>
   </body>
